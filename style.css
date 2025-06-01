@@ -1,54 +1,53 @@
-/* Загальні стилі для SVG */
+/* Загальні стилі */
 svg {
-  border: 1px dashed #ccc;
-  background-color: #f9f9f9;
-  margin: 20px auto;
-  display: block;
+  border: 2px dashed #ccc;
+  margin: 20px;
 }
 
 /* Квадрат */
 .square {
-  fill: #ffcccc;
   stroke: #ff0000;
   stroke-width: 5px;
+  fill: #ffe5e5;
 }
 
 /* Прямокутник */
 .rectangle {
-  fill: #ccffcc;
   stroke: #00aa00;
   stroke-width: 5px;
+  fill: #e5ffe5;
 }
 
 /* Коло */
 .circle {
-  fill: #ccccff;
   stroke: #0000ff;
   stroke-width: 5px;
+  fill: #e5e5ff;
 }
 
-/* Еліпс (анімація) */
+/* Еліпс */
 .ellipse {
-  fill: #fff3e0;
   stroke: #ffa500;
   stroke-width: 5px;
+  fill: #fff3e0;
 }
 
+/* Анімація */
 @keyframes colorChange {
   0% {
-    fill: #fff3e0;
     stroke: #ffa500;
+    fill: #fff3e0;
   }
   50% {
-    fill: #ffccff;
     stroke: #ff00ff;
+    fill: #ffe0f0;
   }
   100% {
-    fill: #fff3e0;
     stroke: #ffa500;
+    fill: #fff3e0;
   }
 }
 
 .animated {
-  animation: colorChange 2s infinite;
+  animation: colorChange 3s infinite;
 }
