@@ -1,0 +1,53 @@
+/* Загальні стилі */
+svg {
+  border: 2px dashed #ccc;
+  margin: 20px;
+}
+
+/* Квадрат */
+.square {
+  stroke: #ff0000;
+  stroke-width: 5px;
+  fill: #ffe5e5;
+}
+
+/* Прямокутник */
+.rectangle {
+  stroke: #00aa00;
+  stroke-width: 5px;
+  fill: #e5ffe5;
+}
+
+/* Коло */
+.circle {
+  stroke: #0000ff;
+  stroke-width: 5px;
+  fill: #e5e5ff;
+}
+
+/* Еліпс */
+.ellipse {
+  stroke: #ffa500;
+  stroke-width: 5px;
+  fill: #fff3e0;
+}
+
+/* Анімація */
+@keyframes colorChange {
+  0% {
+    stroke: #ffa500;
+    fill: #fff3e0;
+  }
+  50% {
+    stroke: #ff00ff;
+    fill: #ffe0f0;
+  }
+  100% {
+    stroke: #ffa500;
+    fill: #fff3e0;
+  }
+}
+
+.animated {
+  animation: colorChange 3s infinite;
+}
